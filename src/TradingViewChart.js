@@ -10,6 +10,7 @@ const TradingViewChart = () => {
       interval: 'D',
       fullscreen: true,
       container_id: chartContainerRef.current.id,
+      autosize: true
       // Add more options as needed
     };
 
@@ -20,7 +21,7 @@ const TradingViewChart = () => {
     };
   }, []);
 
-  return <div id="tv-chart-container" ref={chartContainerRef} style={{ width: '100%', height: '100vh' }} />;
+  return <div id="tv-chart-container" ref={chartContainerRef} style={{ width: '100%', height: '500px' }} />;
 };
 
 export default TradingViewChart;
